@@ -5,14 +5,14 @@ item_price=4
 def buy_items(money, num_items, price):
     """Calculates how many items can be bought with the given money and price."""
 
-    num_bought = 0
+    num_boughts1 = 0
 
     while money >= price and num_items > 0:
         money -= price  # Subtract the price from the remaining money
         num_items -= 1  # Decrement the number of items available
-        num_bought += 1  # Increment the number of items bought
+        num_boughts1 += 1  # Increment the number of items bought
 
-    return num_bought
+    return num_boughts1
 
 # Main code for buying dog treats
 total = buy_items(starting_money, starting_num_items, item_price)
